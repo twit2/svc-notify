@@ -1,4 +1,4 @@
-import { WSResponseObject } from "../types/WSResponseObject";
+import { WSMessage } from "../types/WSResponseObject";
 
 /**
  * Creates a new WebSocket response object.
@@ -7,7 +7,7 @@ import { WSResponseObject } from "../types/WSResponseObject";
  * @param data The data.
  * @returns 
  */
-function create<T>(success: boolean, message?: string, data?: T) : WSResponseObject<T> {
+function create<T>(success: boolean, message?: string, data?: T) : WSMessage<T> {
     return {
         success,
         message: message ?? "",

@@ -1,11 +1,11 @@
 import { Server as HTTPServer } from "http";
 import { Socket, Server as WSServer } from 'socket.io';
-import { DMSession } from "./types/DMSession";
+import { Notification } from "./types/Notification";
 import { ResponseCreator } from "./msg/ResponseCreator";
 import { handleAuthEvent } from "./events/AuthEvent";
 
 let io: WSServer;
-let sessions: DMSession[];
+let sessions: Notification[];
 
 /**
  * Sends an error message.

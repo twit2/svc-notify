@@ -32,7 +32,7 @@ async function main() {
 
     // Listen at the port
     server.listen(port, async () => {
-        console.log(`Messaging service active at port ${port}`);
+        console.log(`Notification service active at port ${port}`);
         await MsgSocketServer.init(server);
     });
 }
